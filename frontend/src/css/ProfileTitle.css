@@ -1,3 +1,10 @@
 .profile-image{
     width: 70%;
 }
+
+.profile-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

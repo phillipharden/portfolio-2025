@@ -1,19 +1,19 @@
 /* Sidebar */
 .sidebar {  
   color: #13293D;
+  padding: 16px;
 }
 
 .sidebar-body {
-  display: flex;
-  flex-direction: column;
+ 
   width: 100%;
   margin: 0 auto;
-  padding-left: 10px;
   
 }
 
-.sidebar-logo {
-  width: 100%;
+.sidebar-nav-container{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -23,17 +23,19 @@
   text-align: center;
 }
 
+.sidebar-text{
+  font-weight: bold;
+}
+
 .sidebar-link {
   text-align: center;
   text-decoration: none;
   color: #13293D;
+  outline:2px solid yellow;
   padding: 10px;
-  font-size: 16px;
-  /* opacity: 1; */
-  
+  font-size: 16px;  
   border-radius: 50px;
-  margin: 1px 0;
-  /* width: 175px; */
+  margin: 2px;
 }
 
 /* mouse over link */

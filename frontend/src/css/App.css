@@ -29,7 +29,7 @@
 }
 
 .app-sidebar {
-  flex: 0.3;
+  
   min-width: 200px;
   min-height: 100vh;
   background-color: #DECFDE;
@@ -38,11 +38,10 @@
 .app-body {
   display: flex;
   flex-direction: column;
-  /* padding: 30px; */
   width: 100vw;
   height: 100vh;
   overflow-y: overlay;
-  flex: 0.9;  
+  /* flex: 0.9;   */
 }
 
 .app-footer-nav {
@@ -53,7 +52,7 @@
 }
 
 /* Hide the sidebar when the screen is 540px or smaller */
-@media only screen and (max-width: 540px) {
+/* @media only screen and (max-width: 540px) {
   .app-sidebar {
     display: none;
   }
@@ -62,10 +61,20 @@
     margin-top: 60px;
     height: 100vh;
   }  
+} */
+.app-sidebar {
+  display: none; /* Sidebar is hidden by default on mobile */
+}
+
+/* Show sidebar when the screen is 992px or larger */
+@media (min-width: 992px) {
+  .app-sidebar {
+    display: block; /* Sidebar appears */
+  }
 }
 
 /* Hide the header and footer when the screen is 540px or larger */
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 992px) {
   .app-header {
     display: none;
   }
