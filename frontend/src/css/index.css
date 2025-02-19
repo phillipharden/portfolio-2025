@@ -1,0 +1,16 @@
+:root {
+  --body_background: rgb(48, 33, 48);
+  --body_background_secondary: #F7F3F7;
+  --body_color: #F7F3F7;
+  --body_color_secondary: #302130;
+
+  --primary_color: rgb(72, 50, 72);
+  --primary_color_light:   #DECFDE; 
+  --primary_color_dark: #302130; 
+  --accent_color:  #A5A5A5;
+
+  --color_white:  #FFFFFF; 
+  --color_light_gray :#BDBDBD; 
+  --color_dark_gray: #757575; 
+  --color_black:   #212121; 
+}

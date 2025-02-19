@@ -1,0 +1,19 @@
+.typing-container {
+  display: inline; /* Ensures inline behavior */
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: black; /* Adjust color as needed */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

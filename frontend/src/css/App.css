@@ -1,0 +1,82 @@
+/*^ Typography ****************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.brand-font {
+  font-family: "Architects Daughter", cursive;
+}
+
+.app {  
+  color: #9FFFCB;
+  background: linear-gradient(transparent, rgb(48, 33, 48));
+  background-color: rgb(72, 50, 72);
+}
+.app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-section {
+  display: flex;
+  flex-grow: 1;
+}
+
+.app-sidebar {
+  flex: 0.3;
+  min-width: 200px;
+  min-height: 100vh;
+  background-color: #DECFDE;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px; */
+  width: 100vw;
+  height: 100vh;
+  overflow-y: overlay;
+  flex: 0.9;  
+}
+
+.app-footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Hide the sidebar when the screen is 540px or smaller */
+@media only screen and (max-width: 540px) {
+  .app-sidebar {
+    display: none;
+  }
+  .app-body {
+    flex: 10;
+    margin-top: 60px;
+    height: 100vh;
+  }  
+}
+
+/* Hide the header and footer when the screen is 540px or larger */
+@media only screen and (min-width: 540px) {
+  .app-header {
+    display: none;
+  }
+  .app-footer-nav {
+    display: none;
+  }  
+  .app-body {
+    padding-top: 30px;
+  }  
+}
+
+.margin-bottom-custom {
+  margin-bottom: 80px;
+}
